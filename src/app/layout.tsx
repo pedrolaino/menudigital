@@ -19,6 +19,20 @@ export const metadata: Metadata = {
   description:
     "Restaurante de fine dining en Buenos Aires. Cocina de autor argentina contemporánea con ingredientes de estación.",
   keywords: ["restaurante", "fine dining", "Buenos Aires", "cocina de autor", "argentina"],
+  openGraph: {
+    title: "Luma — Cocina de Autor Argentina",
+    description:
+      "Una experiencia gastronómica que celebra la tierra argentina. Fine dining en el corazón de Buenos Aires.",
+    siteName: "Luma",
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luma — Cocina de Autor Argentina",
+    description:
+      "Una experiencia gastronómica que celebra la tierra argentina. Fine dining en el corazón de Buenos Aires.",
+  },
 };
 
 export default function RootLayout({

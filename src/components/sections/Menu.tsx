@@ -111,18 +111,20 @@ export default function Menu({ dishes }: MenuProps) {
           initial={{ opacity: 0, y: 10 }}
           animate={headerInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex justify-center mb-14 overflow-x-auto px-1 pb-1 scrollbar-none"
+          className="flex justify-center mb-14"
         >
-          <div className="flex border border-[#2a2a2a] shrink-0">
-            {CATEGORIES.map((cat) => (
+          <div className="grid grid-cols-2 md:flex border border-[#2a2a2a]">
+            {CATEGORIES.map((cat, i) => (
               <button
                 key={cat.value}
                 onClick={() => setActiveCategory(cat.value)}
-                className={`px-4 md:px-5 py-2.5 text-xs tracking-[0.2em] uppercase font-[family-name:var(--font-sans)] transition-all duration-300 cursor-pointer whitespace-nowrap ${
-                  activeCategory === cat.value
+                className={`px-5 py-3 text-xs tracking-[0.2em] uppercase font-[family-name:var(--font-sans)] transition-all duration-300 cursor-pointer whitespace-nowrap
+                  ${i % 2 === 0 ? "border-r border-[#2a2a2a] md:border-r-0" : ""}
+                  ${i < 2 ? "border-b border-[#2a2a2a] md:border-b-0" : ""}
+                  ${activeCategory === cat.value
                     ? "bg-[#C9A84C] text-[#0d0d0d]"
                     : "text-[#f5f0e8]/50 hover:text-[#f5f0e8] hover:bg-[#1a1a1a]"
-                }`}
+                  }`}
               >
                 {cat.label}
               </button>

@@ -43,7 +43,7 @@ export const STATIC_MENU: Dish[] = [
     price: 15,
     category: "entradas",
     image_url:
-      "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop",
     available: true,
   },
 
@@ -159,7 +159,7 @@ export const STATIC_MENU: Dish[] = [
     price: 7,
     category: "bebidas",
     image_url:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=800&auto=format&fit=crop",
     available: true,
   },
   {

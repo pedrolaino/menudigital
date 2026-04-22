@@ -159,7 +159,7 @@ export const STATIC_MENU: Dish[] = [
     price: 7,
     category: "bebidas",
     image_url:
-      "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1474722883778-792e7990302f?q=80&w=800&auto=format&fit=crop",
     available: true,
   },
   {
